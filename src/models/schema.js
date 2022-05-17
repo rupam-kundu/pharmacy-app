@@ -1,5 +1,80 @@
 export const schema = {
     "models": {
+        "Ingredients": {
+            "name": "Ingredients",
+            "fields": {
+                "id": {
+                    "name": "id",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "ingredient": {
+                    "name": "ingredient",
+                    "isArray": false,
+                    "type": "String",
+                    "isRequired": false,
+                    "attributes": []
+                },
+                "medicinesID": {
+                    "name": "medicinesID",
+                    "isArray": false,
+                    "type": "ID",
+                    "isRequired": true,
+                    "attributes": []
+                },
+                "createdAt": {
+                    "name": "createdAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                },
+                "updatedAt": {
+                    "name": "updatedAt",
+                    "isArray": false,
+                    "type": "AWSDateTime",
+                    "isRequired": false,
+                    "attributes": [],
+                    "isReadOnly": true
+                }
+            },
+            "syncable": true,
+            "pluralName": "Ingredients",
+            "attributes": [
+                {
+                    "type": "model",
+                    "properties": {}
+                },
+                {
+                    "type": "key",
+                    "properties": {
+                        "name": "byMedicines",
+                        "fields": [
+                            "medicinesID"
+                        ]
+                    }
+                },
+                {
+                    "type": "auth",
+                    "properties": {
+                        "rules": [
+                            {
+                                "allow": "public",
+                                "operations": [
+                                    "create",
+                                    "update",
+                                    "delete",
+                                    "read"
+                                ]
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
         "SKUs": {
             "name": "SKUs",
             "fields": {
@@ -123,6 +198,20 @@ export const schema = {
                     "association": {
                         "connectionType": "HAS_MANY",
                         "associatedWith": "medicines"
+                    }
+                },
+                "Ingredients": {
+                    "name": "Ingredients",
+                    "isArray": true,
+                    "type": {
+                        "model": "Ingredients"
+                    },
+                    "isRequired": false,
+                    "attributes": [],
+                    "isArrayNullable": true,
+                    "association": {
+                        "connectionType": "HAS_MANY",
+                        "associatedWith": "medicinesID"
                     }
                 },
                 "createdAt": {
@@ -250,5 +339,5 @@ export const schema = {
     },
     "enums": {},
     "nonModels": {},
-    "version": "0a2f62ae5536723cbf108e0831a464d6"
+    "version": "2c95ecd2a2c6df818a4fa20f4c3bb6e5"
 };
