@@ -4,10 +4,6 @@ import { ModelInit, MutableModel, PersistentModelConstructor } from "@aws-amplif
 
 
 
-type IngredientsMetaData = {
-  readOnlyFields: 'createdAt' | 'updatedAt';
-}
-
 type SKUsMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
 }
@@ -18,16 +14,6 @@ type MedicinesMetaData = {
 
 type MedicinesSKUsMetaData = {
   readOnlyFields: 'createdAt' | 'updatedAt';
-}
-
-export declare class Ingredients {
-  readonly id: string;
-  readonly ingredient?: string | null;
-  readonly medicinesID: string;
-  readonly createdAt?: string | null;
-  readonly updatedAt?: string | null;
-  constructor(init: ModelInit<Ingredients, IngredientsMetaData>);
-  static copyOf(source: Ingredients, mutator: (draft: MutableModel<Ingredients, IngredientsMetaData>) => MutableModel<Ingredients, IngredientsMetaData> | void): Ingredients;
 }
 
 export declare class SKUs {
@@ -47,7 +33,6 @@ export declare class Medicines {
   readonly manufacturer?: string | null;
   readonly mrp?: number | null;
   readonly SKuses?: (MedicinesSKUs | null)[] | null;
-  readonly Ingredients?: (Ingredients | null)[] | null;
   readonly createdAt?: string | null;
   readonly updatedAt?: string | null;
   constructor(init: ModelInit<Medicines, MedicinesMetaData>);
