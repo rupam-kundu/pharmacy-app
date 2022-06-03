@@ -12,12 +12,14 @@ export default function MedicinesListHeading(props) {
   const { overrides, ...rest } = props;
   return (
     <Flex
-      gap="10px"
+      gap="12.699999809265137px"
       direction="column"
+      width="1100px"
+      height="127px"
       justifyContent="center"
       alignItems="center"
       position="relative"
-      padding="30px 507px 30px 507px"
+      padding="38.099998474121094px 643.8900146484375px 38.099998474121094px 643.8900146484375px"
       backgroundColor="rgba(255,255,255,1)"
       {...rest}
       {...getOverrideProps(overrides, "MedicinesListHeading")}
@@ -26,14 +28,13 @@ export default function MedicinesListHeading(props) {
         display="flex"
         gap="0"
         direction="row"
-        width="fit-content"
-        justifyContent="center"
-        alignItems="center"
+        width="272px"
+        height="66px"
         shrink="0"
         position="relative"
         padding="0px 0px 0px 0px"
         level="2"
-        children="Medicines’ list"
+        children="Medicines List"
         {...getOverrideProps(overrides, "Heading")}
       ></Heading>
     </Flex>

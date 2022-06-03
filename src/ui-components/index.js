@@ -5,6 +5,7 @@
  **************************************************************************/
 
 export { default as EditProfile } from "./EditProfile";
+export { default as MedicinesListHeading } from "./MedicinesListHeading";
 export { default as SocialPost } from "./SocialPost";
 export { default as Features4x1 } from "./Features4x1";
 export { default as MedicinesListHeader } from "./MedicinesListHeader";
@@ -12,7 +13,6 @@ export { default as Ampligram } from "./Ampligram";
 export { default as EditMedicine } from "./EditMedicine";
 export { default as ProfileCard } from "./ProfileCard";
 export { default as HeroLayout4 } from "./HeroLayout4";
-export { default as MedicinesListHeading } from "./MedicinesListHeading";
 export { default as MarketingFooter } from "./MarketingFooter";
 export { default as FAQItem } from "./FAQItem";
 export { default as MedicinesListItem } from "./MedicinesListItem";

@@ -7,14 +7,17 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Button, Text, View } from "@aws-amplify/ui-react";
+import { Button, Flex, Text, View } from "@aws-amplify/ui-react";
 export default function MedicinesListItem(props) {
   const { medicines, overrides, ...rest } = props;
   return (
-    <View
-      width="1280px"
-      height="106px"
-      overflow="hidden"
+    <Flex
+      gap="0"
+      direction="row"
+      width="1100px"
+      height="100px"
+      justifyContent="flex-end"
+      alignItems="center"
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
@@ -22,12 +25,11 @@ export default function MedicinesListItem(props) {
       {...getOverrideProps(overrides, "MedicinesListItem")}
     >
       <View
-        width="245px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="0px"
+        width="200px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -35,19 +37,19 @@ export default function MedicinesListItem(props) {
       >
         <Text
           fontFamily="Inter"
-          fontSize="32px"
+          fontSize="20px"
           fontWeight="500"
           color="rgba(0,0,0,1)"
-          lineHeight="40px"
+          lineHeight="25px"
           textAlign="center"
           display="flex"
           direction="column"
           justifyContent="center"
           position="absolute"
-          top="33px"
-          bottom="33px"
-          left="81px"
-          right="80px"
+          top="37px"
+          bottom="38px"
+          left="74px"
+          right="74px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={medicines?.name}
@@ -55,12 +57,11 @@ export default function MedicinesListItem(props) {
         ></Text>
       </View>
       <View
-        width="245px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="245px"
+        width="200px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -68,19 +69,19 @@ export default function MedicinesListItem(props) {
       >
         <Text
           fontFamily="Inter"
-          fontSize="32px"
+          fontSize="20px"
           fontWeight="500"
           color="rgba(0,0,0,1)"
-          lineHeight="40px"
+          lineHeight="25px"
           textAlign="center"
           display="flex"
           direction="column"
           justifyContent="center"
           position="absolute"
-          top="33px"
-          bottom="33px"
-          left="81px"
-          right="80px"
+          top="37px"
+          bottom="38px"
+          left="74px"
+          right="74px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={medicines?.manufacturer}
@@ -88,12 +89,11 @@ export default function MedicinesListItem(props) {
         ></Text>
       </View>
       <View
-        width="245px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="490px"
+        width="200px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -101,19 +101,19 @@ export default function MedicinesListItem(props) {
       >
         <Text
           fontFamily="Inter"
-          fontSize="32px"
+          fontSize="20px"
           fontWeight="500"
           color="rgba(0,0,0,1)"
-          lineHeight="40px"
+          lineHeight="25px"
           textAlign="center"
           display="flex"
           direction="column"
           justifyContent="center"
           position="absolute"
-          top="33px"
-          bottom="33px"
-          left="81px"
-          right="80px"
+          top="37px"
+          bottom="38px"
+          left="74px"
+          right="74px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={medicines?.mrp}
@@ -121,12 +121,11 @@ export default function MedicinesListItem(props) {
         ></Text>
       </View>
       <View
-        width="245px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="735px"
+        width="200px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -134,19 +133,19 @@ export default function MedicinesListItem(props) {
       >
         <Text
           fontFamily="Inter"
-          fontSize="32px"
+          fontSize="20px"
           fontWeight="500"
           color="rgba(0,0,0,1)"
-          lineHeight="40px"
+          lineHeight="25px"
           textAlign="center"
           display="flex"
           direction="column"
           justifyContent="center"
           position="absolute"
-          top="33px"
-          bottom="33px"
-          left="81px"
-          right="80px"
+          top="37px"
+          bottom="38px"
+          left="74px"
+          right="74px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={medicines?.description}
@@ -155,11 +154,10 @@ export default function MedicinesListItem(props) {
       </View>
       <View
         width="150px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="980px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -186,11 +184,10 @@ export default function MedicinesListItem(props) {
       </View>
       <View
         width="150px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="1130px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -215,6 +212,6 @@ export default function MedicinesListItem(props) {
           {...getOverrideProps(overrides, "Button31902728")}
         ></Button>
       </View>
-    </View>
+    </Flex>
   );
 }

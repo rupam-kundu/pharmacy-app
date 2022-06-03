@@ -7,14 +7,17 @@
 /* eslint-disable */
 import React from "react";
 import { getOverrideProps } from "@aws-amplify/ui-react/internal";
-import { Text, View } from "@aws-amplify/ui-react";
+import { Flex, Text, View } from "@aws-amplify/ui-react";
 export default function MedicinesListHeader(props) {
   const { overrides, ...rest } = props;
   return (
-    <View
-      width="1280px"
-      height="106px"
-      overflow="hidden"
+    <Flex
+      gap="0"
+      direction="row"
+      width="1100px"
+      height="100px"
+      justifyContent="flex-end"
+      alignItems="center"
       position="relative"
       padding="0px 0px 0px 0px"
       backgroundColor="rgba(255,255,255,1)"
@@ -22,12 +25,11 @@ export default function MedicinesListHeader(props) {
       {...getOverrideProps(overrides, "MedicinesListHeader")}
     >
       <View
-        width="245px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="0px"
+        width="200px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -35,32 +37,31 @@ export default function MedicinesListHeader(props) {
       >
         <Text
           fontFamily="Inter"
-          fontSize="32px"
+          fontSize="20px"
           fontWeight="500"
           color="rgba(0,0,0,1)"
-          lineHeight="40px"
+          lineHeight="25px"
           textAlign="center"
           display="flex"
           direction="column"
           justifyContent="center"
           position="absolute"
-          top="33px"
-          bottom="33px"
-          left="78px"
-          right="77px"
+          top="38px"
+          bottom="37px"
+          left="83.29px"
+          right="60.71px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Name"
-          {...getOverrideProps(overrides, "Label31902716")}
+          {...getOverrideProps(overrides, "Name")}
         ></Text>
       </View>
       <View
-        width="245px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="245px"
+        width="200px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -68,32 +69,31 @@ export default function MedicinesListHeader(props) {
       >
         <Text
           fontFamily="Inter"
-          fontSize="32px"
+          fontSize="20px"
           fontWeight="500"
           color="rgba(0,0,0,1)"
-          lineHeight="40px"
+          lineHeight="25px"
           textAlign="center"
           display="flex"
           direction="column"
           justifyContent="center"
           position="absolute"
-          top="33px"
-          bottom="33px"
-          left="20px"
-          right="18px"
+          top="37px"
+          bottom="38px"
+          left="35px"
+          right="35px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Manufacturer"
-          {...getOverrideProps(overrides, "Label31902714")}
+          {...getOverrideProps(overrides, "Manufacturer")}
         ></Text>
       </View>
       <View
-        width="245px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="490px"
+        width="200px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -101,32 +101,30 @@ export default function MedicinesListHeader(props) {
       >
         <Text
           fontFamily="Inter"
-          fontSize="32px"
+          fontSize="20px"
           fontWeight="500"
           color="rgba(0,0,0,1)"
-          lineHeight="40px"
+          lineHeight="25px"
           textAlign="center"
           display="flex"
           direction="column"
           justifyContent="center"
           position="absolute"
-          top="33px"
-          bottom="33px"
-          left="88px"
-          right="87px"
+          top="38px"
+          bottom="37px"
+          left="78px"
+          right="78px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="MRP"
-          {...getOverrideProps(overrides, "Label31902712")}
+          {...getOverrideProps(overrides, "MRP")}
         ></Text>
       </View>
       <View
-        width="245px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="735px"
-        overflow="hidden"
+        width="200px"
+        height="100px"
+        shrink="0"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -134,32 +132,31 @@ export default function MedicinesListHeader(props) {
       >
         <Text
           fontFamily="Inter"
-          fontSize="32px"
+          fontSize="20px"
           fontWeight="500"
           color="rgba(0,0,0,1)"
-          lineHeight="40px"
+          lineHeight="25px"
           textAlign="center"
           display="flex"
           direction="column"
           justifyContent="center"
           position="absolute"
-          top="33px"
-          bottom="33px"
-          left="35px"
-          right="34px"
+          top="38px"
+          bottom="37px"
+          left="45px"
+          right="45px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Description"
-          {...getOverrideProps(overrides, "Label31882710")}
+          {...getOverrideProps(overrides, "Description")}
         ></Text>
       </View>
       <View
         width="150px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="980px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
@@ -167,16 +164,15 @@ export default function MedicinesListHeader(props) {
       ></View>
       <View
         width="150px"
-        height="106px"
-        position="absolute"
-        top="0px"
-        left="1130px"
+        height="100px"
+        shrink="0"
         overflow="hidden"
+        position="relative"
         border="1px SOLID rgba(0,0,0,1)"
         padding="0px 0px 0px 0px"
         backgroundColor="rgba(255,255,255,1)"
         {...getOverrideProps(overrides, "Blank31902722")}
       ></View>
-    </View>
+    </Flex>
   );
 }

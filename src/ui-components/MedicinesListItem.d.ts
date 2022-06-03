@@ -7,8 +7,8 @@
 import React from "react";
 import { Medicines } from "../models";
 import { EscapeHatchProps } from "@aws-amplify/ui-react/internal";
-import { ViewProps } from "@aws-amplify/ui-react";
-export declare type MedicinesListItemProps = React.PropsWithChildren<Partial<ViewProps> & {
+import { FlexProps } from "@aws-amplify/ui-react";
+export declare type MedicinesListItemProps = React.PropsWithChildren<Partial<FlexProps> & {
     medicines?: Medicines;
 } & {
     overrides?: EscapeHatchProps | undefined | null;
