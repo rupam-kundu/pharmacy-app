@@ -1,20 +1,19 @@
-import { MedicinesListHeading } from "./ui-components";
-import { MedicinesListHeader } from "./ui-components";
-import { MedicinesListItemCollection } from "./ui-components";
-import { NavBar } from "./ui-components";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Layout from "./components/Layout";
+import MedicinesList from "./components/MedicinesList";
+import AddMed from "./components/AddMedicine";
 
 function App() {
   return (
-    <>
-      <NavBar />
-      <MedicinesListHeading />
-      <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr" }}>
-        <div></div>
-        <MedicinesListHeader />
-        <div></div>
-      </div>
-      <MedicinesListItemCollection />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<MedicinesList />} />
+          <Route path="list" element={<MedicinesList />} />
+          <Route path="add" element={<AddMed />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
 }
 

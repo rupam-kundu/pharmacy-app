@@ -9,10 +9,19 @@ import React from "react";
 import {
   getOverrideProps,
   useAuthSignOutAction,
+  useNavigateAction,
 } from "@aws-amplify/ui-react/internal";
 import { Flex, Text } from "@aws-amplify/ui-react";
 export default function NavBar(props) {
   const { overrides, ...rest } = props;
+  const medicineslistOnClick = useNavigateAction({
+    type: "url",
+    url: "http://localhost:3000/",
+  });
+  const addamedicineOnClick = useNavigateAction({
+    type: "url",
+    url: "http://localhost:3000/add/",
+  });
   const signoutOnClick = useAuthSignOutAction({ global: true });
   return (
     <Flex
@@ -56,6 +65,9 @@ export default function NavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Medicines list"
+          onClick={() => {
+            medicineslistOnClick();
+          }}
           {...getOverrideProps(overrides, "Medicines list")}
         ></Text>
         <Text
@@ -74,6 +86,9 @@ export default function NavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Add a medicine"
+          onClick={() => {
+            addamedicineOnClick();
+          }}
           {...getOverrideProps(overrides, "Add a medicine")}
         ></Text>
       </Flex>
