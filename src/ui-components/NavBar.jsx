@@ -16,11 +16,11 @@ export default function NavBar(props) {
   const { overrides, ...rest } = props;
   const medicineslistOnClick = useNavigateAction({
     type: "url",
-    url: "http://localhost:3000/",
+    url: "https://main.d367ez1kwl743b.amplifyapp.com/",
   });
   const addamedicineOnClick = useNavigateAction({
     type: "url",
-    url: "http://localhost:3000/add/",
+    url: "https://main.d367ez1kwl743b.amplifyapp.com/add/",
   });
   const signoutOnClick = useAuthSignOutAction({ global: true });
   return (
