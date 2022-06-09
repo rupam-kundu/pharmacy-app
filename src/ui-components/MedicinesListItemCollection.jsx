@@ -23,9 +23,6 @@ export default function MedicinesListItemCollection(props) {
   return (
     <Collection
       type="list"
-      isSearchable={true}
-      isPaginated={true}
-      searchPlaceholder="Search..."
       direction="column"
       justifyContent="stretch"
       items={items || []}

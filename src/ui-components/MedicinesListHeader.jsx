@@ -20,26 +20,28 @@ export default function MedicinesListHeader(props) {
       alignItems="center"
       position="relative"
       padding="0px 0px 0px 0px"
-      backgroundColor="rgba(255,255,255,1)"
+      backgroundColor="rgba(0,0,0,1)"
       {...rest}
       {...getOverrideProps(overrides, "MedicinesListHeader")}
     >
       <View
-        width="200px"
+        width="210px"
         height="100px"
-        shrink="0"
+        grow="1"
+        basis="210px"
+        alignSelf="stretch"
         overflow="hidden"
         position="relative"
-        border="1px SOLID rgba(0,0,0,1)"
+        border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(0,0,0,1)"
         {...getOverrideProps(overrides, "TableCellLabel31902715")}
       >
         <Text
           fontFamily="Inter"
           fontSize="20px"
           fontWeight="500"
-          color="rgba(0,0,0,1)"
+          color="rgba(255,255,255,1)"
           lineHeight="25px"
           textAlign="center"
           display="flex"
@@ -57,21 +59,23 @@ export default function MedicinesListHeader(props) {
         ></Text>
       </View>
       <View
-        width="200px"
+        width="210px"
         height="100px"
-        shrink="0"
+        grow="1"
+        basis="210px"
+        alignSelf="stretch"
         overflow="hidden"
         position="relative"
-        border="1px SOLID rgba(0,0,0,1)"
+        border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(0,0,0,1)"
         {...getOverrideProps(overrides, "TableCellLabel31902713")}
       >
         <Text
           fontFamily="Inter"
           fontSize="20px"
           fontWeight="500"
-          color="rgba(0,0,0,1)"
+          color="rgba(255,255,255,1)"
           lineHeight="25px"
           textAlign="center"
           display="flex"
@@ -89,21 +93,23 @@ export default function MedicinesListHeader(props) {
         ></Text>
       </View>
       <View
-        width="200px"
+        width="210px"
         height="100px"
-        shrink="0"
+        grow="1"
+        basis="210px"
+        alignSelf="stretch"
         overflow="hidden"
         position="relative"
-        border="1px SOLID rgba(0,0,0,1)"
+        border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(0,0,0,1)"
         {...getOverrideProps(overrides, "TableCellLabel31902711")}
       >
         <Text
           fontFamily="Inter"
           fontSize="20px"
           fontWeight="500"
-          color="rgba(0,0,0,1)"
+          color="rgba(255,255,255,1)"
           lineHeight="25px"
           textAlign="center"
           display="flex"
@@ -121,20 +127,22 @@ export default function MedicinesListHeader(props) {
         ></Text>
       </View>
       <View
-        width="200px"
+        width="210px"
         height="100px"
-        shrink="0"
+        grow="1"
+        basis="210px"
+        alignSelf="stretch"
         position="relative"
-        border="1px SOLID rgba(0,0,0,1)"
+        border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(0,0,0,1)"
         {...getOverrideProps(overrides, "TableCellLabel31882709")}
       >
         <Text
           fontFamily="Inter"
           fontSize="20px"
           fontWeight="500"
-          color="rgba(0,0,0,1)"
+          color="rgba(255,255,255,1)"
           lineHeight="25px"
           textAlign="center"
           display="flex"
@@ -152,25 +160,25 @@ export default function MedicinesListHeader(props) {
         ></Text>
       </View>
       <View
-        width="150px"
+        width="130px"
         height="100px"
         shrink="0"
         overflow="hidden"
         position="relative"
-        border="1px SOLID rgba(0,0,0,1)"
+        border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(0,0,0,1)"
         {...getOverrideProps(overrides, "Blank31902717")}
       ></View>
       <View
-        width="150px"
+        width="130px"
         height="100px"
         shrink="0"
         overflow="hidden"
         position="relative"
-        border="1px SOLID rgba(0,0,0,1)"
+        border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(255,255,255,1)"
+        backgroundColor="rgba(0,0,0,1)"
         {...getOverrideProps(overrides, "Blank31902722")}
       ></View>
     </Flex>

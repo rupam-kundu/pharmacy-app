@@ -4,7 +4,7 @@ import { Outlet } from "react-router-dom";
 export default function Layout() {
   return (
     <>
-      <NavBar />
+      <NavBar width={"100vw"} />
       <Outlet />
     </>
   );

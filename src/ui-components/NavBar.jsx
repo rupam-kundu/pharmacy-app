@@ -33,7 +33,7 @@ export default function NavBar(props) {
       alignItems="center"
       position="relative"
       padding="24px 32px 24px 32px"
-      backgroundColor="rgba(255,255,255,1)"
+      backgroundColor="rgba(0,0,0,1)"
       {...rest}
       {...getOverrideProps(overrides, "NavBar")}
     >
@@ -53,7 +53,7 @@ export default function NavBar(props) {
           fontFamily="Inter"
           fontSize="32px"
           fontWeight="400"
-          color="rgba(0,0,0,1)"
+          color="rgba(255,255,255,1)"
           lineHeight="24px"
           textAlign="left"
           display="flex"
@@ -74,7 +74,7 @@ export default function NavBar(props) {
           fontFamily="Inter"
           fontSize="32px"
           fontWeight="400"
-          color="rgba(0,0,0,1)"
+          color="rgba(255,255,255,1)"
           lineHeight="24px"
           textAlign="left"
           display="flex"
@@ -109,7 +109,7 @@ export default function NavBar(props) {
           fontFamily="Inter"
           fontSize="32px"
           fontWeight="400"
-          color="rgba(0,0,0,1)"
+          color="rgba(255,255,255,1)"
           lineHeight="37.5px"
           textAlign="left"
           display="flex"
