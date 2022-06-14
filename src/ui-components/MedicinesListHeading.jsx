@@ -14,7 +14,7 @@ export default function MedicinesListHeading(props) {
     <Flex
       gap="12.699999809265137px"
       direction="column"
-      width="1100px"
+      width="1200px"
       height="127px"
       justifyContent="center"
       alignItems="center"

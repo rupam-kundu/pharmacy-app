@@ -8,7 +8,6 @@
 import React from "react";
 import {
   getOverrideProps,
-  useAuthSignOutAction,
   useNavigateAction,
 } from "@aws-amplify/ui-react/internal";
 import { Flex, Text } from "@aws-amplify/ui-react";
@@ -16,13 +15,9 @@ export default function NavBar(props) {
   const { overrides, ...rest } = props;
   const medicineslistOnClick = useNavigateAction({
     type: "url",
-    url: "https://main.d367ez1kwl743b.amplifyapp.com/",
+    url: "http://localhost:3000/",
   });
-  const addamedicineOnClick = useNavigateAction({
-    type: "url",
-    url: "https://main.d367ez1kwl743b.amplifyapp.com/add/",
-  });
-  const signoutOnClick = useAuthSignOutAction({ global: true });
+  const addamedicineOnClick = useNavigateAction({ type: "url", url: "" });
   return (
     <Flex
       gap="20px"
@@ -33,7 +28,7 @@ export default function NavBar(props) {
       alignItems="center"
       position="relative"
       padding="24px 32px 24px 32px"
-      backgroundColor="rgba(0,0,0,1)"
+      backgroundColor="rgba(31,4,77,1)"
       {...rest}
       {...getOverrideProps(overrides, "NavBar")}
     >
@@ -120,9 +115,6 @@ export default function NavBar(props) {
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Sign out"
-          onClick={() => {
-            signoutOnClick();
-          }}
           {...getOverrideProps(overrides, "Sign out")}
         ></Text>
       </Flex>

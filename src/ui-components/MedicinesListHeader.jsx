@@ -14,27 +14,27 @@ export default function MedicinesListHeader(props) {
     <Flex
       gap="0"
       direction="row"
-      width="1100px"
+      width="1200px"
       height="100px"
       justifyContent="flex-end"
       alignItems="center"
       position="relative"
       padding="0px 0px 0px 0px"
-      backgroundColor="rgba(0,0,0,1)"
+      backgroundColor="rgba(31,4,77,1)"
       {...rest}
       {...getOverrideProps(overrides, "MedicinesListHeader")}
     >
       <View
-        width="210px"
+        width="188px"
         height="100px"
         grow="1"
-        basis="210px"
+        basis="188px"
         alignSelf="stretch"
         overflow="hidden"
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(0,0,0,1)"
+        backgroundColor="rgba(31,4,77,1)"
         {...getOverrideProps(overrides, "TableCellLabel31902715")}
       >
         <Text
@@ -48,10 +48,10 @@ export default function MedicinesListHeader(props) {
           direction="column"
           justifyContent="center"
           position="absolute"
-          top="38px"
-          bottom="37px"
-          left="83.29px"
-          right="60.71px"
+          top="37px"
+          bottom="38px"
+          left="51px"
+          right="51px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Name"
@@ -59,16 +59,16 @@ export default function MedicinesListHeader(props) {
         ></Text>
       </View>
       <View
-        width="210px"
+        width="188px"
         height="100px"
         grow="1"
-        basis="210px"
+        basis="188px"
         alignSelf="stretch"
         overflow="hidden"
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(0,0,0,1)"
+        backgroundColor="rgba(31,4,77,1)"
         {...getOverrideProps(overrides, "TableCellLabel31902713")}
       >
         <Text
@@ -84,8 +84,8 @@ export default function MedicinesListHeader(props) {
           position="absolute"
           top="37px"
           bottom="38px"
-          left="35px"
-          right="35px"
+          left="17px"
+          right="17px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="Manufacturer"
@@ -93,16 +93,16 @@ export default function MedicinesListHeader(props) {
         ></Text>
       </View>
       <View
-        width="210px"
+        width="188px"
         height="100px"
         grow="1"
-        basis="210px"
+        basis="188px"
         alignSelf="stretch"
         overflow="hidden"
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(0,0,0,1)"
+        backgroundColor="rgba(31,4,77,1)"
         {...getOverrideProps(overrides, "TableCellLabel31902711")}
       >
         <Text
@@ -116,10 +116,10 @@ export default function MedicinesListHeader(props) {
           direction="column"
           justifyContent="center"
           position="absolute"
-          top="38px"
-          bottom="37px"
-          left="78px"
-          right="78px"
+          top="37px"
+          bottom="38px"
+          left="68px"
+          right="69px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children="MRP"
@@ -127,16 +127,16 @@ export default function MedicinesListHeader(props) {
         ></Text>
       </View>
       <View
-        width="210px"
+        width="188px"
         height="100px"
         grow="1"
-        basis="210px"
+        basis="188px"
         alignSelf="stretch"
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(0,0,0,1)"
-        {...getOverrideProps(overrides, "TableCellLabel31882709")}
+        backgroundColor="rgba(31,4,77,1)"
+        {...getOverrideProps(overrides, "TableCellLabel33132756")}
       >
         <Text
           fontFamily="Inter"
@@ -155,6 +155,39 @@ export default function MedicinesListHeader(props) {
           right="45px"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
+          children="SKU"
+          {...getOverrideProps(overrides, "SKU")}
+        ></Text>
+      </View>
+      <View
+        width="188px"
+        height="100px"
+        grow="1"
+        basis="188px"
+        alignSelf="stretch"
+        position="relative"
+        border="1px SOLID rgba(255,255,255,1)"
+        padding="0px 0px 0px 0px"
+        backgroundColor="rgba(31,4,77,1)"
+        {...getOverrideProps(overrides, "TableCellLabel31882709")}
+      >
+        <Text
+          fontFamily="Inter"
+          fontSize="20px"
+          fontWeight="500"
+          color="rgba(255,255,255,1)"
+          lineHeight="25px"
+          textAlign="center"
+          display="flex"
+          direction="column"
+          justifyContent="center"
+          position="absolute"
+          top="37px"
+          bottom="38px"
+          left="33px"
+          right="33px"
+          padding="0px 0px 0px 0px"
+          whiteSpace="pre-wrap"
           children="Description"
           {...getOverrideProps(overrides, "Description")}
         ></Text>
@@ -167,7 +200,7 @@ export default function MedicinesListHeader(props) {
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(0,0,0,1)"
+        backgroundColor="rgba(31,4,77,1)"
         {...getOverrideProps(overrides, "Blank31902717")}
       ></View>
       <View
@@ -178,7 +211,7 @@ export default function MedicinesListHeader(props) {
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(0,0,0,1)"
+        backgroundColor="rgba(31,4,77,1)"
         {...getOverrideProps(overrides, "Blank31902722")}
       ></View>
     </Flex>

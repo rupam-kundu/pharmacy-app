@@ -1,10 +1,19 @@
+import { useState } from "react";
 import {
   MedicinesListHeading,
   MedicinesListHeader,
   MedicinesListItemCollection,
 } from "../ui-components";
+import { useNavigateAction } from "@aws-amplify/ui-react/internal";
 
 export default function MedicinesList() {
+  const baseURL = "http://localhost:3000/edit/";
+  const [medicineId, setMedicineId] = useState("");
+  const buttonThreeTwoNineFiveTwoSevenSevenTwoOnClick = useNavigateAction({
+    type: "url",
+    url: baseURL + medicineId,
+  });
+
   return (
     <>
       <div
@@ -17,7 +26,19 @@ export default function MedicinesList() {
       >
         <MedicinesListHeading />
         <MedicinesListHeader />
-        <MedicinesListItemCollection />
+        <MedicinesListItemCollection
+          overrideItems={({ item, index }) => ({
+            overrides: {
+              Button32952772: {
+                onClick: () => {
+                  setMedicineId(item.id);
+                  console.log(baseURL + item.id);
+                  buttonThreeTwoNineFiveTwoSevenSevenTwoOnClick();
+                },
+              },
+            },
+          })}
+        />
       </div>
     </>
   );
