@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import {
   MedicinesListHeading,
   MedicinesListHeader,
@@ -13,6 +13,13 @@ export default function MedicinesList() {
     type: "url",
     url: baseURL + medicineId,
   });
+
+  useEffect(() => {
+    console.log(baseURL + medicineId);
+    if (medicineId !== "") {
+      buttonThreeTwoNineFiveTwoSevenSevenTwoOnClick();
+    }
+  }, [medicineId]);
 
   return (
     <>
@@ -32,8 +39,6 @@ export default function MedicinesList() {
               Button32952772: {
                 onClick: () => {
                   setMedicineId(item.id);
-                  console.log(baseURL + item.id);
-                  buttonThreeTwoNineFiveTwoSevenSevenTwoOnClick();
                 },
               },
             },

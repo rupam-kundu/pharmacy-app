@@ -6,10 +6,50 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useDataStoreUpdateAction,
+  useStateMutationAction,
+} from "@aws-amplify/ui-react/internal";
+import { Medicines } from "../models";
+import { schema } from "../models/schema";
 import { Button, Heading, TextField, View } from "@aws-amplify/ui-react";
 export default function EditMedicine(props) {
-  const { overrides, ...rest } = props;
+  const { medicines, overrides, ...rest } = props;
+  const [
+    textFieldThreeTwoOneNineTwoSevenEightOneValue,
+    setTextFieldThreeTwoOneNineTwoSevenEightOneValue,
+  ] = useStateMutationAction("");
+  const [
+    textFieldThreeTwoOneNineTwoSevenSevenEightValue,
+    setTextFieldThreeTwoOneNineTwoSevenSevenEightValue,
+  ] = useStateMutationAction("");
+  const [
+    textFieldThreeTwoOneNineTwoSevenSevenNineValue,
+    setTextFieldThreeTwoOneNineTwoSevenSevenNineValue,
+  ] = useStateMutationAction("");
+  const [
+    textFieldThreeTwoOneNineTwoSevenEightZeroValue,
+    setTextFieldThreeTwoOneNineTwoSevenEightZeroValue,
+  ] = useStateMutationAction("");
+  const [
+    textFieldThreeTwoOneNineTwoSevenEightFiveValue,
+    setTextFieldThreeTwoOneNineTwoSevenEightFiveValue,
+  ] = useStateMutationAction("");
+  const buttonThreeTwoOneNineTwoSevenEightTwoOnClick = useDataStoreUpdateAction(
+    {
+      fields: {
+        name: textFieldThreeTwoOneNineTwoSevenEightOneValue,
+        description: textFieldThreeTwoOneNineTwoSevenSevenEightValue,
+        manufacturer: textFieldThreeTwoOneNineTwoSevenSevenNineValue,
+        mrp: textFieldThreeTwoOneNineTwoSevenEightZeroValue,
+        sku: textFieldThreeTwoOneNineTwoSevenEightFiveValue,
+      },
+      id: medicines?.id,
+      model: Medicines,
+      schema: schema,
+    }
+  );
   return (
     <View
       width="1920px"
@@ -37,6 +77,12 @@ export default function EditMedicine(props) {
         isDisabled={false}
         labelHidden={false}
         variation="default"
+        value={textFieldThreeTwoOneNineTwoSevenSevenEightValue}
+        onChange={(event) => {
+          setTextFieldThreeTwoOneNineTwoSevenSevenEightValue(
+            event.target.value
+          );
+        }}
         {...getOverrideProps(overrides, "TextField32192778")}
       ></TextField>
       <TextField
@@ -55,6 +101,10 @@ export default function EditMedicine(props) {
         isDisabled={false}
         labelHidden={false}
         variation="default"
+        value={textFieldThreeTwoOneNineTwoSevenSevenNineValue}
+        onChange={(event) => {
+          setTextFieldThreeTwoOneNineTwoSevenSevenNineValue(event.target.value);
+        }}
         {...getOverrideProps(overrides, "TextField32192779")}
       ></TextField>
       <TextField
@@ -73,6 +123,10 @@ export default function EditMedicine(props) {
         isDisabled={false}
         labelHidden={false}
         variation="default"
+        value={textFieldThreeTwoOneNineTwoSevenEightZeroValue}
+        onChange={(event) => {
+          setTextFieldThreeTwoOneNineTwoSevenEightZeroValue(event.target.value);
+        }}
         {...getOverrideProps(overrides, "TextField32192780")}
       ></TextField>
       <TextField
@@ -91,6 +145,10 @@ export default function EditMedicine(props) {
         isDisabled={false}
         labelHidden={false}
         variation="default"
+        value={textFieldThreeTwoOneNineTwoSevenEightOneValue}
+        onChange={(event) => {
+          setTextFieldThreeTwoOneNineTwoSevenEightOneValue(event.target.value);
+        }}
         {...getOverrideProps(overrides, "TextField32192781")}
       ></TextField>
       <Button
@@ -106,6 +164,9 @@ export default function EditMedicine(props) {
         isDisabled={false}
         variation="primary"
         children="Submit"
+        onClick={() => {
+          buttonThreeTwoOneNineTwoSevenEightTwoOnClick();
+        }}
         {...getOverrideProps(overrides, "Button32192782")}
       ></Button>
       <Button
@@ -151,6 +212,10 @@ export default function EditMedicine(props) {
         isDisabled={false}
         labelHidden={false}
         variation="default"
+        value={textFieldThreeTwoOneNineTwoSevenEightFiveValue}
+        onChange={(event) => {
+          setTextFieldThreeTwoOneNineTwoSevenEightFiveValue(event.target.value);
+        }}
         {...getOverrideProps(overrides, "TextField32192785")}
       ></TextField>
     </View>
