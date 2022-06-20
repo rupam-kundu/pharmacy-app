@@ -4,22 +4,21 @@ import {
   MedicinesListHeader,
   MedicinesListItemCollection,
 } from "../ui-components";
-import { useNavigateAction } from "@aws-amplify/ui-react/internal";
+import { useNavigate } from "react-router-dom";
 
 export default function MedicinesList() {
-  const baseURL = "http://localhost:3000/edit/";
-  const [medicineId, setMedicineId] = useState("");
-  const buttonThreeTwoNineFiveTwoSevenSevenTwoOnClick = useNavigateAction({
-    type: "url",
-    url: baseURL + medicineId,
-  });
+  const [updateMedicine, setUpdateMedicine] = useState();
+  const navigate = useNavigate();
+  const editButtonOnClick = () => {
+    navigate("/edit", { state: { updateMedicine } });
+  };
 
   useEffect(() => {
-    console.log(baseURL + medicineId);
-    if (medicineId !== "") {
-      buttonThreeTwoNineFiveTwoSevenSevenTwoOnClick();
+    console.log(updateMedicine);
+    if (typeof updateMedicine !== "undefined") {
+      editButtonOnClick();
     }
-  }, [medicineId]);
+  }, [updateMedicine]);
 
   return (
     <>
@@ -38,7 +37,7 @@ export default function MedicinesList() {
             overrides: {
               Button32952772: {
                 onClick: () => {
-                  setMedicineId(item.id);
+                  setUpdateMedicine(item);
                 },
               },
             },

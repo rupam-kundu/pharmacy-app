@@ -12,7 +12,7 @@ function App() {
           <Route index element={<MedicinesList />} />
           <Route path="list" element={<MedicinesList />} />
           <Route path="add" element={<AddMed />} />
-          <Route path="edit/:id" element={<EditMed />} />
+          <Route path="edit" element={<EditMed />} />
         </Route>
       </Routes>
     </BrowserRouter>
