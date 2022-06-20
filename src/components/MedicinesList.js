@@ -14,7 +14,6 @@ export default function MedicinesList() {
   };
 
   useEffect(() => {
-    console.log(updateMedicine);
     if (typeof updateMedicine !== "undefined") {
       editButtonOnClick();
     }
