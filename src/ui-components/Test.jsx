@@ -6,10 +6,17 @@
 
 /* eslint-disable */
 import React from "react";
-import { getOverrideProps } from "@aws-amplify/ui-react/internal";
+import {
+  getOverrideProps,
+  useNavigateAction,
+} from "@aws-amplify/ui-react/internal";
 import { Flex, Text, View } from "@aws-amplify/ui-react";
 export default function Test(props) {
   const { overrides, ...rest } = props;
+  const buttonOnClick = useNavigateAction({
+    type: "url",
+    url: "https://www.freecodecamp.org/",
+  });
   return (
     <View
       width="628.49px"
@@ -50,6 +57,9 @@ export default function Test(props) {
         border="1px SOLID rgba(174,179,183,1)"
         borderRadius="5px"
         padding="8px 16px 8px 16px"
+        onClick={() => {
+          buttonOnClick();
+        }}
         {...getOverrideProps(overrides, "Button")}
       >
         <Text
