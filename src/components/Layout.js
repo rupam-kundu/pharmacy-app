@@ -2,7 +2,7 @@ import { NavBar } from "../ui-components";
 import { Outlet } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-export default function Layout() {
+export default function Layout({ signOut }) {
   let navigate = useNavigate();
   const medicineslistOnClick = () => navigate("/");
   const addamedicineOnClick = () => navigate("/add");
@@ -12,6 +12,9 @@ export default function Layout() {
     },
     "Add a medicine": {
       onClick: () => addamedicineOnClick(),
+    },
+    "Sign out": {
+      onClick: () => signOut(),
     },
   };
 
