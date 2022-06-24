@@ -14,7 +14,10 @@ export default function Layout({ signOut }) {
       onClick: () => addamedicineOnClick(),
     },
     "Sign out": {
-      onClick: () => signOut(),
+      onClick: () => {
+        signOut();
+        navigate("/");
+      },
     },
   };
 
