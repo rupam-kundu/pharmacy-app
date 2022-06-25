@@ -36,20 +36,18 @@ export default function EditMedicine(props) {
     textFieldThreeTwoOneNineTwoSevenEightFiveValue,
     setTextFieldThreeTwoOneNineTwoSevenEightFiveValue,
   ] = useStateMutationAction("");
-  const buttonThreeTwoOneNineTwoSevenEightTwoOnClick = useDataStoreUpdateAction(
-    {
-      fields: {
-        name: textFieldThreeTwoOneNineTwoSevenEightOneValue,
-        description: textFieldThreeTwoOneNineTwoSevenSevenEightValue,
-        manufacturer: textFieldThreeTwoOneNineTwoSevenSevenNineValue,
-        mrp: textFieldThreeTwoOneNineTwoSevenEightZeroValue,
-        sku: textFieldThreeTwoOneNineTwoSevenEightFiveValue,
-      },
-      id: medicines?.id,
-      model: Medicines,
-      schema: schema,
-    }
-  );
+  const buttonOnClick = useDataStoreUpdateAction({
+    fields: {
+      name: textFieldThreeTwoOneNineTwoSevenEightOneValue,
+      description: textFieldThreeTwoOneNineTwoSevenSevenEightValue,
+      manufacturer: textFieldThreeTwoOneNineTwoSevenSevenNineValue,
+      mrp: textFieldThreeTwoOneNineTwoSevenEightZeroValue,
+      sku: textFieldThreeTwoOneNineTwoSevenEightFiveValue,
+    },
+    id: medicines?.id,
+    model: Medicines,
+    schema: schema,
+  });
   return (
     <View
       width="1920px"
@@ -155,8 +153,8 @@ export default function EditMedicine(props) {
         display="flex"
         gap="0"
         position="absolute"
-        top="calc(50% - 20px - -387px)"
-        left="calc(50% - 44px - 110px)"
+        top="calc(50% - 20px - -394px)"
+        left="calc(50% - 44px - 6px)"
         direction="row"
         justifyContent="center"
         alignItems="center"
@@ -165,24 +163,9 @@ export default function EditMedicine(props) {
         variation="primary"
         children="Submit"
         onClick={() => {
-          buttonThreeTwoOneNineTwoSevenEightTwoOnClick();
+          buttonOnClick();
         }}
-        {...getOverrideProps(overrides, "Button32192782")}
-      ></Button>
-      <Button
-        display="flex"
-        gap="0"
-        position="absolute"
-        top="calc(50% - 20px - -387px)"
-        left="calc(50% - 38.5px - -110.5px)"
-        direction="row"
-        justifyContent="center"
-        alignItems="center"
-        size="default"
-        isDisabled={false}
-        variation="primary"
-        children="Reset"
-        {...getOverrideProps(overrides, "Button32192783")}
+        {...getOverrideProps(overrides, "Button")}
       ></Button>
       <Heading
         display="flex"

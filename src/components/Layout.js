@@ -8,12 +8,21 @@ export default function Layout({ signOut }) {
   const addamedicineOnClick = () => navigate("/add");
   const navBarOverrides = {
     "Medicines list": {
+      style: {
+        cursor: "pointer",
+      },
       onClick: () => medicineslistOnClick(),
     },
     "Add a medicine": {
+      style: {
+        cursor: "pointer",
+      },
       onClick: () => addamedicineOnClick(),
     },
     "Sign out": {
+      style: {
+        cursor: "pointer",
+      },
       onClick: () => {
         signOut();
         navigate("/");

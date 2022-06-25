@@ -20,7 +20,7 @@ export default function MedicinesListHeader(props) {
       alignItems="center"
       position="relative"
       padding="0px 0px 0px 0px"
-      backgroundColor="rgba(31,4,77,1)"
+      backgroundColor="rgba(37,34,40,1)"
       {...rest}
       {...getOverrideProps(overrides, "MedicinesListHeader")}
     >
@@ -34,7 +34,7 @@ export default function MedicinesListHeader(props) {
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(31,4,77,1)"
+        backgroundColor="rgba(59,47,79,1)"
         {...getOverrideProps(overrides, "TableCellLabel31902715")}
       >
         <Text
@@ -68,7 +68,7 @@ export default function MedicinesListHeader(props) {
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(31,4,77,1)"
+        backgroundColor="rgba(59,47,79,1)"
         {...getOverrideProps(overrides, "TableCellLabel31902713")}
       >
         <Text
@@ -102,7 +102,7 @@ export default function MedicinesListHeader(props) {
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(31,4,77,1)"
+        backgroundColor="rgba(59,47,79,1)"
         {...getOverrideProps(overrides, "TableCellLabel31902711")}
       >
         <Text
@@ -135,7 +135,7 @@ export default function MedicinesListHeader(props) {
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(31,4,77,1)"
+        backgroundColor="rgba(59,47,79,1)"
         {...getOverrideProps(overrides, "TableCellLabel33132756")}
       >
         <Text
@@ -168,7 +168,7 @@ export default function MedicinesListHeader(props) {
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(31,4,77,1)"
+        backgroundColor="rgba(59,47,79,1)"
         {...getOverrideProps(overrides, "TableCellLabel31882709")}
       >
         <Text
@@ -200,7 +200,7 @@ export default function MedicinesListHeader(props) {
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(31,4,77,1)"
+        backgroundColor="rgba(59,47,79,1)"
         {...getOverrideProps(overrides, "Blank31902717")}
       ></View>
       <View
@@ -211,7 +211,7 @@ export default function MedicinesListHeader(props) {
         position="relative"
         border="1px SOLID rgba(255,255,255,1)"
         padding="0px 0px 0px 0px"
-        backgroundColor="rgba(31,4,77,1)"
+        backgroundColor="rgba(59,47,79,1)"
         {...getOverrideProps(overrides, "Blank31902722")}
       ></View>
     </Flex>

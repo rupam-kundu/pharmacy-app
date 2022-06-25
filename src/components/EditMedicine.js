@@ -71,9 +71,7 @@ export default function EditMed() {
       },
     },
     Button32192782: {
-      onClick: () => {
-        buttonThreeTwoOneNineTwoSevenEightTwoOnClick();
-      },
+      onClick: buttonThreeTwoOneNineTwoSevenEightTwoOnClick,
     },
   };
 
