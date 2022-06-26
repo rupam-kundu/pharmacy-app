@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import { EditMedicine } from "../ui-components";
 import { DataStore } from "@aws-amplify/datastore";
 import { Medicines } from "../models";
 
 export default function EditMed() {
+  const [originalMedicine, setOriginalMedicine] = useState();
   const [textFieldNameValue, setTextFieldNameValue] = useState("");
   const [textFieldDescriptionValue, setTextFieldDescriptionValue] =
     useState("");
@@ -12,10 +13,18 @@ export default function EditMed() {
     useState("");
   const [textFieldMRPValue, setTextFieldMRPValue] = useState(0);
   const [textFieldSKUValue, setTextFieldSKUValue] = useState("");
-
   const location = useLocation();
+  let navigate = useNavigate();
+
   useEffect(() => {
-    console.log(location.state.updateMedicine);
+    const getOriginalMedicine = async () => {
+      const originalMedicineObj = await DataStore.query(
+        Medicines,
+        location.state.updateMedicine.id
+      );
+      setOriginalMedicine(originalMedicineObj);
+    };
+    getOriginalMedicine();
     setTextFieldNameValue(location.state.updateMedicine.name);
     setTextFieldDescriptionValue(location.state.updateMedicine.description);
     setTextFieldManufacturerValue(location.state.updateMedicine.manufacturer);
@@ -24,10 +33,6 @@ export default function EditMed() {
   }, []);
 
   const buttonThreeTwoOneNineTwoSevenEightTwoOnClick = async () => {
-    const originalMedicine = await DataStore.query(
-      Medicines,
-      location.state.updateMedicine.id
-    );
     await DataStore.save(
       Medicines.copyOf(originalMedicine, (item) => {
         item.name = textFieldNameValue;
@@ -37,6 +42,7 @@ export default function EditMed() {
         item.sku = textFieldSKUValue;
       })
     );
+    navigate("/");
   };
 
   const medicineOverrides = {
@@ -70,8 +76,10 @@ export default function EditMed() {
         setTextFieldSKUValue(event.target.value);
       },
     },
-    Button32192782: {
-      onClick: buttonThreeTwoOneNineTwoSevenEightTwoOnClick,
+    Button: {
+      onClick: () => {
+        buttonThreeTwoOneNineTwoSevenEightTwoOnClick();
+      },
     },
   };
 
