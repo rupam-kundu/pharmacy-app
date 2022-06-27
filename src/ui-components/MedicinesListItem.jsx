@@ -31,7 +31,7 @@ export default function MedicinesListItem(props) {
       gap="0"
       direction="row"
       width="1200px"
-      height="493px"
+      height="300px"
       justifyContent="flex-end"
       alignItems="center"
       position="relative"
@@ -42,7 +42,7 @@ export default function MedicinesListItem(props) {
     >
       <View
         width="188px"
-        height="493px"
+        height="300px"
         grow="1"
         basis="188px"
         alignSelf="stretch"
@@ -65,7 +65,7 @@ export default function MedicinesListItem(props) {
           width="162px"
           height="426px"
           position="absolute"
-          top="calc(50% - 213px - 0.5px)"
+          top="calc(50% - 213px - 1px)"
           left="calc(50% - 81px - 0px)"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
@@ -75,7 +75,7 @@ export default function MedicinesListItem(props) {
       </View>
       <View
         width="188px"
-        height="493px"
+        height="300px"
         grow="1"
         basis="188px"
         alignSelf="stretch"
@@ -95,11 +95,11 @@ export default function MedicinesListItem(props) {
           display="flex"
           direction="column"
           justifyContent="center"
+          width="158px"
+          height="260px"
           position="absolute"
-          top="21px"
-          bottom="19px"
-          left="15px"
-          right="15px"
+          top="calc(50% - 130px - -1px)"
+          left="calc(50% - 79px - 0px)"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={medicines?.manufacturer}
@@ -108,7 +108,7 @@ export default function MedicinesListItem(props) {
       </View>
       <View
         width="188px"
-        height="493px"
+        height="300px"
         grow="1"
         basis="188px"
         alignSelf="stretch"
@@ -128,11 +128,11 @@ export default function MedicinesListItem(props) {
           display="flex"
           direction="column"
           justifyContent="center"
+          width="154px"
+          height="264px"
           position="absolute"
-          top="21px"
-          bottom="15px"
-          left="19px"
-          right="15px"
+          top="calc(50% - 132px - -3px)"
+          left="calc(50% - 77px - -2px)"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={medicines?.mrp}
@@ -141,7 +141,7 @@ export default function MedicinesListItem(props) {
       </View>
       <View
         width="188px"
-        height="493px"
+        height="300px"
         grow="1"
         basis="188px"
         alignSelf="stretch"
@@ -161,11 +161,11 @@ export default function MedicinesListItem(props) {
           display="flex"
           direction="column"
           justifyContent="center"
+          width="152px"
+          height="262px"
           position="absolute"
-          top="19px"
-          bottom="19px"
-          left="19px"
-          right="17px"
+          top="calc(50% - 131px - 0px)"
+          left="calc(50% - 76px - -1px)"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={medicines?.sku}
@@ -174,7 +174,7 @@ export default function MedicinesListItem(props) {
       </View>
       <View
         width="188px"
-        height="493px"
+        height="300px"
         grow="1"
         basis="188px"
         alignSelf="stretch"
@@ -194,11 +194,11 @@ export default function MedicinesListItem(props) {
           display="flex"
           direction="column"
           justifyContent="center"
+          width="152px"
+          height="262px"
           position="absolute"
-          top="19px"
-          bottom="19px"
-          left="19px"
-          right="17px"
+          top="calc(50% - 131px - 0px)"
+          left="calc(50% - 76px - -1px)"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
           children={medicines?.description}
@@ -207,7 +207,7 @@ export default function MedicinesListItem(props) {
       </View>
       <View
         width="130px"
-        height="493px"
+        height="300px"
         shrink="0"
         alignSelf="stretch"
         position="relative"
@@ -220,8 +220,8 @@ export default function MedicinesListItem(props) {
           display="flex"
           gap="0"
           position="absolute"
-          top="204px"
-          left="27px"
+          top="calc(50% - 20px - 1px)"
+          left="calc(50% - 31.5px - 1.5px)"
           direction="row"
           justifyContent="center"
           alignItems="center"
@@ -240,7 +240,7 @@ export default function MedicinesListItem(props) {
       </View>
       <View
         width="130px"
-        height="493px"
+        height="300px"
         shrink="0"
         alignSelf="stretch"
         position="relative"
@@ -253,8 +253,8 @@ export default function MedicinesListItem(props) {
           display="flex"
           gap="0"
           position="absolute"
-          top="204px"
-          left="26px"
+          top="calc(50% - 20px - 1px)"
+          left="calc(50% - 41.5px - 1.5px)"
           direction="row"
           justifyContent="center"
           alignItems="center"

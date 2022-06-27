@@ -9,7 +9,6 @@ export { default as FormCheckout } from "./FormCheckout";
 export { default as EditProfile } from "./EditProfile";
 export { default as MarketingFooter } from "./MarketingFooter";
 export { default as MedicinesListItem } from "./MedicinesListItem";
-export { default as Test } from "./Test";
 export { default as ReviewCard } from "./ReviewCard";
 export { default as Features2x3 } from "./Features2x3";
 export { default as StandardCard } from "./StandardCard";
