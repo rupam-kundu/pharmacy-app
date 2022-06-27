@@ -11,7 +11,7 @@ export default function EditMed() {
     useState("");
   const [textFieldManufacturerValue, setTextFieldManufacturerValue] =
     useState("");
-  const [textFieldMRPValue, setTextFieldMRPValue] = useState(0);
+  const [textFieldMRPValue, setTextFieldMRPValue] = useState("");
   const [textFieldSKUValue, setTextFieldSKUValue] = useState("");
   const location = useLocation();
   let navigate = useNavigate();
@@ -32,7 +32,7 @@ export default function EditMed() {
     setTextFieldSKUValue(location.state.updateMedicine.sku);
   }, []);
 
-  const buttonThreeTwoOneNineTwoSevenEightTwoOnClick = async () => {
+  const buttonOnClick = async () => {
     await DataStore.save(
       Medicines.copyOf(originalMedicine, (item) => {
         item.name = textFieldNameValue;
@@ -78,7 +78,7 @@ export default function EditMed() {
     },
     Button: {
       onClick: () => {
-        buttonThreeTwoOneNineTwoSevenEightTwoOnClick();
+        buttonOnClick();
       },
     },
   };
