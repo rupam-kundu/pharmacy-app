@@ -6,6 +6,7 @@ export default function Layout({ signOut }) {
   let navigate = useNavigate();
   const medicineslistOnClick = () => navigate("/");
   const addamedicineOnClick = () => navigate("/add");
+
   const navBarOverrides = {
     "Medicines list": {
       style: {
@@ -24,7 +25,7 @@ export default function Layout({ signOut }) {
         cursor: "pointer",
       },
       onClick: () => {
-        signOut();
+        signOut({ global: true });
         navigate("/");
       },
     },
