@@ -172,11 +172,11 @@ export default function EditMedicine(props) {
         gap="0"
         position="absolute"
         top="calc(50% - 25px - 423px)"
-        left="calc(50% - 144.5px - 0.5px)"
+        left="calc(50% - 133px - 0.5px)"
         direction="row"
         padding="0px 0px 0px 0px"
         level="2"
-        children="Edit a medicine"
+        children="Edit a product"
         {...getOverrideProps(overrides, "Heading")}
       ></Heading>
       <TextField

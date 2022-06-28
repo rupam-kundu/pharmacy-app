@@ -34,7 +34,7 @@ export default function MedicinesListHeading(props) {
         position="relative"
         padding="0px 0px 0px 0px"
         level="2"
-        children="Medicines List"
+        children="Product List"
         {...getOverrideProps(overrides, "Heading")}
       ></Heading>
     </Flex>

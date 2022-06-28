@@ -169,11 +169,11 @@ export default function AddMedicine(props) {
         gap="0"
         position="absolute"
         top="calc(50% - 25px - 423px)"
-        left="calc(50% - 146.5px - 0.5px)"
+        left="calc(50% - 135px - 0.5px)"
         direction="row"
         padding="0px 0px 0px 0px"
         level="2"
-        children="Add a medicine"
+        children="Add a product"
         {...getOverrideProps(overrides, "Heading")}
       ></Heading>
       <TextField

@@ -61,7 +61,7 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Medicines list"
+          children="Product list"
           onClick={() => {
             medicineslistOnClick();
           }}
@@ -82,7 +82,7 @@ export default function NavBar(props) {
           position="relative"
           padding="0px 0px 0px 0px"
           whiteSpace="pre-wrap"
-          children="Add a medicine"
+          children="Add a product"
           onClick={() => {
             addamedicineOnClick();
           }}

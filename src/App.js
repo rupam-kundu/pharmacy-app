@@ -22,6 +22,11 @@ const theme = {
           },
         },
       },
+      font: {
+        primary: {
+          value: "#3B2F4F",
+        },
+      },
     },
   },
 };
